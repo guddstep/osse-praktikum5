@@ -22,7 +22,7 @@ public class Queue {
    }
 
    public int dequeue(){
-	   if(tail < head){
+	   if(tail < head){ // war vorher tail < head
 		    throw new IllegalStateException("dequeue on empty queue");
 		  }
 		  return queue[(head++) % maxqueuelength];
