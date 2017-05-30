@@ -7,6 +7,6 @@ public class UtilTest {
 	@Test
 	public void testUtilIstErstesHalbjahr() {
 		assertTrue(Util.istErstesHalbjahr(6));
-		assertTrue(!Util.istErstesHalbjahr(7));
+		assertFalse(Util.istErstesHalbjahr(7));
 	}
 }
